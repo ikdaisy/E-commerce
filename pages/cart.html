@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirae</title>
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/cart.css">
+
+</head>
+<body>
+     <!-- ------------navbar------------------- -->
+
+     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark  ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../images/download.webp" alt="" width="150px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./beauty.html">Beauty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./fragrances.html">Fragrances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./furniture.html">Furniture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./groceries.html">Groceries</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" onclick="checkCart()">Cart</a>
+            </li> -->
+           
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  
+      <!-- ----------- navbar end ---------------------------  -->
+
+    <div class="main">
+        <div class="men-cards" id="products" >
+      
+        
+        </div>
+       
+        
+            <div class="price-card">
+                <h2>PRICE DETAILS</h2>
+                <div class="price-details">
+                  <p>Total Price: <span id="total-price"></span></p>
+                  <p>Discount: <span id="discount" style="color: green;"></span></p>
+                  <p>Delivery Charges: <span id="delivery-charges" style="color: green;">FREE</span></p>
+                  <p style="font-weight: bold;color: black;">Total Amount: <span id="total-amount"></span></p>
+                  <p style="color: green;font-weight: bold;font-size: 18px; ">You will save <span id="discountPrice" ></span> on this order</p>
+                </div>
+                <p style="width: 100%; margin-left: 10px; margin-top: 10px; color: rgb(63, 61, 61);font-size: 15px;">Safe and Secure Payments.Easy returns.100% Authentic products.</p>
+               <Button class="place-order" onclick="placeOrder()">PLACE ORDER</Button>
+
+              </div>
+              
+    </div>
+   
+
+    
+    <script src="../js/bootstrap.bundle.min.js.js"></script>
+    <script src="../js/cart.js"></script>
+    
+</body>
+</html>

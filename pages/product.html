@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirae</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+     <!-- ------------navbar------------------- -->
+
+     <nav class="navbar navbar-expand-lg   navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/download.webp" alt="" width="150px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./beauty.html">Beauty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./fragrances.html">Fragrances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./furniture.html">Furniture</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./groceries.html">Groceries</a>
+              </li>
+              <li class="nav-item">
+            <a class="nav-link" onclick="checkCart()">Cart <span style="color: black; background-color: white; border-radius: 10px; padding: 1px 8px; margin-left: 2px; font-size: 15px;" id="cart-count">  </span></a>
+                
+              </li>
+             
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+        <!-- ----------- navbar end ---------------------------  -->
+
+        <div class="product">
+            <div class="pro-cards" id="card">
+
+            
+            </div>
+        <div class="pro-pic" >
+            <img src="" alt="no image" id="main-image" >
+        </div>
+        <div class="pro-content" >
+           
+            <h4 style="color: rgb(123, 121, 121);margin-bottom: 10px; font-size: 15px;" id="category" ></h4>
+            <h4 style="font-size: 20px; margin-bottom: 15px;" id="title"></h4>
+            <p style="font-size: medium;color: rgb(94, 91, 91);margin-bottom: 15px; text-align: justify;" id="description"> </p>
+            <div style="margin-bottom: 20px;">
+                <span><button class="pro-btn" id="rating"> <span><i class="fa-solid fa-star"></i></span></button></span>
+                
+               </div>
+           
+           <div style="word-spacing: 10px;margin-bottom: 10px;">
+            <span style="font-weight: bold;font-size: 30px;" id="discount-price"></span>
+            <span style="text-decoration: line-through;color: gray;" id="original-price"></span>
+            <span style="color: rgb(35, 162, 35);font-weight: bolder; letter-spacing: 2px; " id="discount-percentage">14%OFF</span>
+            
+           </div>
+           <div id="details" >
+
+           </div>
+          
+           <p id="details"></p>
+
+        <h4 style="margin-bottom: 10px;font-size: 17px;">Available offers</h4>
+        <p style="margin-bottom: 5px;"><img src="../images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt="" style="width: 15px;">Bank OfferGet 10% off upto ₹50 on first Flipkart UPI transaction on order of ₹250 and aboveT&C</p>
+
+        <p style="margin-bottom: 2px;"><img src="../images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt="" style="width: 15px;">Bank Offer5% Cashback on Flipkart Axis Bank CardT&C</p>
+
+        <!-- <p style=" margin-bottom: 5px;"><img src="../images/c22c9fc4-0555-4460-8401-bf5c28d7ba29.webp" alt="" style="width: 15px;">Bank Offer10% off up to ₹1,250 on ICICI Bank Credit Card Transactions, on orders of ₹5,000 and aboveT&C</p> -->
+        <span class="last-btn">
+
+           
+        <span class="last-btn" id="cart-btn">
+            
+            <!-- <button class="last-btn1" onclick="addToCart()">ADD TO CART</button> -->
+            </span>
+            <a href="./buy.html"><button class="last-btn2">BUY NOW</button></a>
+
+            
+        </span>
+       
+
+
+
+
+
+        </div>
+       
+    </div>
+
+    <!-- <a href="../index.html"><button style="border: none;background-color: black; color: white; font-weight: bolder; margin-top: 20px; padding: 10px 15px; margin-left: 20px; border-radius: 8px; cursor: pointer;">Back to HomePage</button></a> -->
+    <script src="../js/product.js"></script>
+    <script src="../js/bootstrap.bundle.min.js.js"></script>
+</body>
+</html>

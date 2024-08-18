@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    background: linear-gradient(147deg,#f6b323 0%, purple 74%);
+  }
+
+
+
+ .success-card {
+    background-color: rgb(143, 79, 143);
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    
+  }
+  
+  .check-icon {
+    font-size: 48px;
+    color: #4CAF50;
+    animation: check-icon-animation 1s ease-in-out;
+  }
+
+  .success-message {
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    opacity: 0;
+    animation: message-animation 1s ease-in-out forwards;
+  }
+  
+  @keyframes check-icon-animation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      
+    }
+  }
+  
+  @keyframes message-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
