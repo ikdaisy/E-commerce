@@ -92,6 +92,7 @@ function displayPriceDetails(){
     document.getElementById("total-price").innerHTML='$'+OriginalPrice
     document.getElementById("discount").innerHTML=-totalDiscount
     document.getElementById("total-amount").innerHTML='$'+totalPrice
+    
     document.getElementById("discountPrice").innerHTML=-totalDiscount
 
 
